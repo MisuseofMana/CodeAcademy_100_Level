@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/aboutpageDefault.css">
+    <link rel="stylesheet" href="./assets/style/aboutpageTablet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>About Sean</title>
+</head>
+<body>
+    <header class="dispGrid oneGrid">
+        <section class="animated bounceInDown aboutTitle">
+            <h1 >SEAN A. YAGER</h1>
+            <h2 >Artist - UI Designer - Widely Known Sorcerer </h2>
+        </section>
+
+        <section id="overlay">
+
+        </section>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/videos/mhArtVid.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+    </header>
+
+    <section class="dispGrid">
+
+
+    <section class="split"></section>
+
+
+    <main id="firstTwo">
+        <h2>So Who is This Guy?</h2>
+        <section>
+            <img class="floatR" src="./assets/imgs/seanheadshot.jpg" alt="">
+            <p>
+                Sean Yager, a.k.a Shin, a.k.a Misuse of Mana, is a cartoonist and comic 
+                illustrator located in Austin, TX. By day he codes, creates, and 
+                maintains a myriad of websites for various clients. By night he 
+                summons creatures, camaraderie, and conflicts to enrich his comic
+                universe, the realm of Amara.
+            </p>
+            
+            
+        </section>
+        
+        <h2>SO What's his deal?</h2>
+        <section>
+            
+            <p>
+                <img class="floatL" src="./assets/imgs/page048.jpg" alt="">
+                He grew up in the Indiana cornfields swinging tree branch swords and 
+                imagining backyard adventures. Sean attended IUPUI and Herron School 
+                of Art for several years before deciding that college wasn’t going to 
+                hack it. He now works freelance for himself on the side while taking on 
+                coding jobs to pay the bills.
+            </p>
+        </section>
+    </main>
+    
+    <main id="secondTwo">
+        <h2>What's He DO?</h2>
+        <section>
+            <p>
+                <img class="floatR" src="./assets/imgs/doaCover.png" alt="">
+                Among his smattering of web based content he self publishes 
+                his work, such as his poetry comic “IRE”, and the ambitious 
+                Dungeons and Dragons inspired bestiary/game-ifiyed booklet 
+                “Dungeons of Amara”. He also publishes monthly doodle zines 
+                which are evolving into Dungeon World fan content, called “Zine 
+                Cuisine” and has been doing so for almost three years. The name’s 
+                probably gonna change soon to something more fantasy-esque.
+            </p>
+       
+        </section>
+        
+        <h2>Hire the dude</h2>
+        <section>
+ 
+            <p> 
+                For inquiries about hiring Sean for art or code, send him an email via the envelope icon below.
+         
+            </p> 
+        </section>
+    </main>
+
+</section>
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    video.playbackRate = 2;
+
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+</body>
+</html>

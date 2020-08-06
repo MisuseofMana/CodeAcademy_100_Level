@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border-left:solid 1px gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+header {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+a:hover {
+  color:rgb(0, 140, 255);
+}
+
+header h1 {
+  font-size:50px;
+  margin:20px 0 0 0;
+}
+
+header h2 {
+  font-size:20px;
+  margin:0;
+}
+
+header p {
+  font-size: 12px;
+  margin:0;
+}
+
+ .fullRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .imagePillar {
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .imagePillar img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .zindex {
+    z-index: 9999;
+  }
+
+
+
+  /* Overlay Code */
+  .container {
+    position: relative;
+    width: 100%;
+    font-family:"Oswald",sans-serif;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+.signature {
+    color:white;
+    text-align:right;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 15px;
+    padding:0 20%;
+  }
+
+  /* Responsive Media Queries */
+  @media screen and (max-width: 911px) {
+
+    .imagePillar {
+      flex: 50%;
+      max-width: 48%;
+      padding: 0 4px;
+    }
+    
+    header h1 {
+      font-size:40px;
+      margin:20px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 715px) {
+
+    .imagePillar {
+      flex: 100%;
+      max-width: 100%;
+      padding: 0 4px;
+    }
+    
+    header h1 {
+      font-size:30px;
+      margin:20px 0 0 0;
+    }
+
+    header h2 {
+      font-size:15px
+    }
+  }

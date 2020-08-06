@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./src/style.css">
+    
+</head>
+<body>
+    <main id="appWrapper">
+            <section class="row">
+                <div onclick="placeMark(this.id)" id="box1" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box2" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box3" class="slot"></div>
+            </section>
+            
+            <section class="row">
+                <div onclick="placeMark(this.id)" id="box4" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box5" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box6" class="slot"></div>
+            </section>
+            
+            <section class="row">
+                <div onclick="placeMark(this.id)" id="box7" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box8" class="slot"></div>
+                <div onclick="placeMark(this.id)" id="box9" class="slot"></div>
+            </section>
+
+            <section class="row">
+                <p id="clearButton" onclick="clearBoard()">CLEAR BOARD</p>
+            </section>
+        
+    </main>
+
+    <script src="./src/scripts/ticTacToe.js"></script>
+</body>
+</html>

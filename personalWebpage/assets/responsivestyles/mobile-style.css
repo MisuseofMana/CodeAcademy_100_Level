@@ -1,0 +1,83 @@
+/* Mobile Style Sheet */
+/* For Screens less than 576px wide */
+
+body {
+    margin:0;
+}
+
+/* Font Size change on mobile display */
+h1 {
+    font-weight:100;
+    font-size:3.5em;
+    text-align:left;
+}
+
+h2 {
+    font-weight:100;
+    font-size:3em;
+    margin:10px;
+    padding:5px;
+}
+
+.wrapperGrid {
+    display:grid;
+}
+
+.flex {
+    display:flex;    
+}
+
+.headerGrid {
+    background:rgb(51,168,221);
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 100;
+}
+
+/* Mobile only Rule for Header */
+.mobileCenter {
+    padding:15% 15%;
+}
+
+/* background color changed on mobile */
+.mainGrid {
+    background:rgb(247,245,246);
+}
+
+/* Main Content Styles */
+/* Flex direction added to mobile styles */
+.mainContainer {
+    width:40%;
+    margin: 0 auto;
+    padding:10%;
+    justify-content: center;;
+    flex-direction: column;
+}
+
+/* Header Color Style - creates block element to color with Title Colors Section */
+.mainContainer article > header {
+    display:block;
+    height:30px;
+    width:100%;
+}
+
+/* Defines size of mock posts */
+.mainContainer > article {
+    width:100%;
+    margin-bottom:30%;
+    display:block;
+    text-align: center;
+    color:black;
+}
+
+/* Title Colors */
+.blueH {
+    background:rgb(51,168,221);
+}
+.redH {
+    background:rgb(244,103,49);
+}
+.greenH {
+    background:rgb(43,205,192);
+}

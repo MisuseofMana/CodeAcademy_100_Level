@@ -1,0 +1,46 @@
+h1 {
+    font-size:30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Barlowe', sans-serif;
+}
+
+.sitesCenter {
+    width:100%;
+    margin:10px auto;
+    display:grid;
+    grid-template-columns: 49% 50%;
+    grid-column-gap: 1%;
+    grid-template-rows: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h1:hover {
+    color:rgba(179, 255, 0, 0.8);
+}
+
+.leftGrid {
+    grid-column:1/2;
+}
+
+.rightGrid {
+    grid-column:2/3;
+}
+
+.iframeHolder {
+    margin-bottom:0;
+}
+
+.iframeHolder iframe {
+    border:2px solid black;
+    width:100%;
+    height:100vh;
+    grid-row: 1/2;
+    margin:0;
+    padding:0;
+}
